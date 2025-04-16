@@ -1,0 +1,239 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header Styling */
+header {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    height: 10vh;
+}
+
+/* Suzuki Logo */
+.logo img {
+    height: 20vh;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Explore Section */
+#explore {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#explore h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn {
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.explore-btn:hover {
+    background: red;
+}
+
+/* ---- PRODUCT SECTION ---- */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 100px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    min-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 3px solid #ddd;
+}
+
+/* Quick View Button */
+.quick-view {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quick-view:hover {
+    background: red;
+}
+
+/* Product Info */
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Pricing */
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 20px;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+/* ---- BOOK ONLINE BUTTON ---- */
+.book-online {
+    background: #0056b3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px auto 0 auto;
+}
+
+.book-online:hover {
+    background: red;
+    transform: scale(1.05);
+}
+
+/* See More */
+.see-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-more a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    font-style: italic;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+.see-more a:hover {
+    color: red;
+}
